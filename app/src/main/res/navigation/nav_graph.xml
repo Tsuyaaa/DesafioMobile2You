@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listMovies">
+
+    <fragment
+        android:id="@+id/listMovies"
+        android:name="com.mobile2you.moviedbmobile2you.ListMovies"
+        android:label="fragment_list_movies"
+        tools:layout="@layout/fragment_list_movies" >
+        <action
+            android:id="@+id/action_listMovies_to_movieDetails"
+            app:destination="@id/movieDetails"
+            app:popUpTo="@id/movieDetails"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetails"
+        android:name="com.mobile2you.moviedbmobile2you.MovieDetails"
+        android:label="fragment_movie_details"
+        tools:layout="@layout/fragment_movie_details" >
+        <action
+            android:id="@+id/action_movieDetails_to_listMovies"
+            app:destination="@id/listMovies"
+            app:popUpTo="@id/listMovies"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_movieDetails_self"
+            app:destination="@id/movieDetails"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

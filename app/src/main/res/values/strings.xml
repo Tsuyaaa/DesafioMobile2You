@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Movies2You</string>
+    <string name="popular">Popular</string>
+    <string name="most_popular_movies">Mais populares</string>
+    <string name="error_movies">Verifique sua conexão com a internet</string>
+    <string name="rated">Maiores Avaliações</string>
+    <string name="top_rated">Mais bem avaliados</string>
+    <string name="playing_now">Filmes em Cartaz</string>
+    <string name="right_now">Em exibição nos cinemas</string>
+    <string name="upcoming">Em Breve</string>
+    <string name="similar">Mais como este</string>
+</resources>
